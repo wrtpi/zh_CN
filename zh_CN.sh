@@ -73,8 +73,8 @@ echo "================================================"
 echo "Your VPS Language setting is changed to Chinese(Simplified)"
 echo "Reconnect to your VPS to see the Chinese display effect"
 echo "================================================"
-echo“您的VPS语言设置已更改为中文（简体）”
-echo“重新连接到您的VPS看看中文显示效果”
+echo "您的 VPS 语言设置已更改为支持中文显示（简体）"
+echo "重新连接到您的 VPS 看看Linux终端的中文显示效果"
 echo "================================================"
 # Delete self
 cd ${dir}
