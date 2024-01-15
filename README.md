@@ -6,6 +6,8 @@
 ## 一键设置Linux终端支持中文的命令
 
     wget -N --no-check-certificate https://raw.githubusercontent.com/wrtpi/zh_CN/master/zh_CN.sh && bash zh_CN.sh
+    or
+    wget -N --no-check-certificate http://gg.gg/zh_CN  && bash zh_CN
 
 ## 系统支持版本
 
