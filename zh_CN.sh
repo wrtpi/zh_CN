@@ -19,6 +19,9 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
 fi
 
+# Set up IPV6 DNS resolution IPv4 DomainName
+mv /etc/resolv.conf /etc/resolv.conf.bak && echo -e "nameserver 2001:67c:2b0::4\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
+
 # Check root
 [[ $EUID -ne 0 ]] && echo -e "${RED}Error:${PLAIN} This script must be run as root!" && exit 1
 
