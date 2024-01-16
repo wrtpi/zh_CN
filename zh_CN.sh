@@ -62,6 +62,11 @@ elif [ "${release}" == "ubuntu" ]; then
 	rm -rf /etc/default/locale.conf
 	cd /etc/
 	wget https://raw.githubusercontent.com/wrtpi/zh_CN/master/locale.gen > /dev/null 2>&1
+ 	echo "----------------------------------------------------------------------"
+	echo "正在设置系统支持中文显示环境 ....................................."
+  	echo "----------------------------------------------------------------------"
+   	echo "Setting up system support for Chinese display environment ......"
+ 	echo "----------------------------------------------------------------------"
 	locale-gen
 	cd /etc/default/
 	wget https://raw.githubusercontent.com/wrtpi/zh_CN/master/locale.conf > /dev/null 2>&1
@@ -69,7 +74,7 @@ elif [ "${release}" == "ubuntu" ]; then
 fi
 
 # Echo Success
-clear
+#clear
 echo "================================================"
 echo "Your VPS Language setting is changed to Chinese(Simplified)"
 echo "Reconnect to your VPS to see the Chinese display effect"
